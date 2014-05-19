@@ -21,7 +21,7 @@ if ($cache->hasExpired()) {
 
 if (isset($_GET['page'])) {
 
-    $latest_deaths = (int)$_GET['page'];
+    $page = (int)$_GET['page'];
 
 } else {
 

@@ -37,7 +37,7 @@ for ($i = $current; $i < $current + $config['news_per_page']; $i++) {
 
     if (isset($news[$i])) {
 
-        echo '<h1>'.$news[$i]['title'].'</h1><hr><p>'.$news[$i]['text'].'</p>';
+        echo '<h2>'.$news[$i]['title'].'</h2><small>'.$news[$i]['date'].'</small><hr><p>'.$news[$i]['text'].'</p><br>';
     }
 }
 

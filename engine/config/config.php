@@ -11,7 +11,7 @@ return array(
     'mysql' => array(
 
         'host'     => 'localhost',
-        'password' => 'djramos1',
+        'password' => '',
         'user'     => 'root',
         'database' => 'rotmgweb'
     ),
@@ -19,6 +19,6 @@ return array(
     // Website stuff
 
     'project_name' => 'RotMG Webapp',
-    'news_per_page' => 1,
+    'news_per_page' => 4,
     'deaths_per_page' => 25,
 );
