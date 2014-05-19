@@ -39,12 +39,29 @@ if (isset($_POST['submit'])) {
 
         } else {
 
-            generate_errors(array('message' => 'Wrong username or password'));
+            $errors[] = array('message' => 'Wrong username or password');
+
+            generate_errors($errors);
         }
 
     } else {
 
         generate_errors($credentials->_errors);
     }
+
+} else {
+
+    ?>
+
+<form class="form-signin" role="form" action="login.php" method="POST">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <input type="hidden" name="csrf" value="<?php echo generate_csrf(15); ?>">
+    <input type="text" name="username" class="form-control" placeholder="Username" required="" autofocus=""><br>
+    <input type="password" name="password" class="form-control" placeholder="Password" required=""><br>
+    <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Sign in</button>
+</form>
+
+<?php
+
 }
  

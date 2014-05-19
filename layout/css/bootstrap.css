@@ -12,6 +12,14 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+.item {
+    display: inline-block;
+    position: relative;
+    width: 46px;
+    height: 46px;
+    margin: -1px -3px -3px;
+    background: url(../img/renders.png) transparent;
+}
 body {
     margin: 0;
 }

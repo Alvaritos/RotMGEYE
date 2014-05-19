@@ -14,17 +14,11 @@ class Cache {
 
         $this->_file = $file.'.cache.php';
         $this->_expiration = $lifetime;
-
-        if (!file_exists('engine/cache/'.$this->_file)) {
-
-            $cache_file = fopen('engine/cache/'.$this->_file, 'wb');
-            fclose($cache_file);
-        }
     }
 
     public function hasExpired() {
 
-        if (time() < filemtime('engine/cache/'.$this->_file ) + $this->_expiration) {
+        if (is_file('engine/cache/'.$this->_file ) && time() < filemtime('engine/cache/'.$this->_file) + $this->_expiration) {
 
             return false;
 
