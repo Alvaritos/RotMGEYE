@@ -5,11 +5,15 @@
  */
 
 ob_start();
+session_start();
 
 $config = include 'config/config.php';
 
 include 'functions/cache.php';
 include 'functions/general.php';
+include 'functions/validation.php';
 
 $db = new Database($config['mysql']);
+
+
 
