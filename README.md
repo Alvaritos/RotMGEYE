@@ -3,9 +3,9 @@ RotMGWeb
 
 RotMG Web engine for private servers
 
-Developers
+Main Developers
 =========
-- Alvaritos (aka Raggaer)
+- Alvaritos
 - BlackRayquaza
 
 Features
