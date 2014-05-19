@@ -20,4 +20,5 @@ return array(
 
     'project_name' => 'RotMG Webapp',
     'news_per_page' => 1,
+    'deaths_per_page' => 25,
 );
