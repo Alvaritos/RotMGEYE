@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><?php echo $config['project_name']; ?></title>
+    <link rel="stylesheet" type="text/css" href="/layout/css/bootstrap.css" />
+</head>
+<body>
+<?php
+$time = microtime();
+$time = explode(' ', $time);
+$time = $time[1] + $time[0];
+$start = $time;
+?>
+<?php include 'nav.html'; ?>
+<div class="container" id="main">

@@ -6,15 +6,15 @@
 
 class Database {
 
-    public $db;
+    public $_db;
 
-    private $credentials;
+    private $_credentials;
 
     public function __construct($credentials = array()) {
 
         // Store our credentials
 
-        $this->credentials = array(
+        $this->_credentials = array(
             'host' => $credentials['host'], 'user' => $credentials['user'], 'password' => $credentials['password'], 'database' => $credentials['database']
         );
 
@@ -22,11 +22,39 @@ class Database {
 
             // Create the PDO connection object
 
-            $this->db = new PDO('mysql:host=s'.$credentials['host'].';dbname='.$credentials['database'], $credentials['user'], $credentials['password']);
+            $this->_db = new PDO('mysql:host='.$credentials['host'].';dbname='.$credentials['database'], $credentials['user'], $credentials['password']);
 
         } catch (PDOException $error) {
 
             die('<h4>Error occurred while creating the PDO connection</h4><br>'.$error);
+        }
+    }
+
+    public function multipleQuery($query, $params = array()) {
+
+        $query = $this->_db->prepare($query);
+
+        if ($query->execute($params)) {
+
+            return $query->fetchAll();
+
+        } else {
+
+            return false;
+        }
+    }
+
+    public function simpleQuery($query) {
+
+        $query = $this->_db->prepare($query);
+
+        if ($query->execute()) {
+
+            return $query->fetchAll();
+
+        } else {
+
+            return false;
         }
     }
 }

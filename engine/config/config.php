@@ -13,10 +13,11 @@ return array(
         'host'     => 'localhost',
         'password' => '',
         'user'     => 'root',
-        'database' => 'rotmgweb'
+        'database' => 'rotmg'
     ),
 
-    // Website title + navigation bar
+    // Website stuff
 
     'project_name' => 'RotMG Webapp',
+    'news_per_page' => 1,
 );
