@@ -13,7 +13,7 @@ return array(
         'host'     => 'localhost',
         'password' => '',
         'user'     => 'root',
-        'database' => 'rotmgweb'
+        'database' => 'rotmg'
     ),
 
     // Website stuff
