@@ -7,4 +7,4 @@
 include 'engine/engine.php';
 include 'layout/header.html';
 
-render_image($item_list, 3096);
+render_image(3096);

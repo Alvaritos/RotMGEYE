@@ -13,7 +13,6 @@ include 'functions/cache.php';
 include 'functions/general.php';
 include 'functions/validation.php';
 
-$item_list = include 'layout/js/renders.php';
 $db = new Database($config['mysql']);
 
 

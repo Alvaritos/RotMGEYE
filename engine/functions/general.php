@@ -67,8 +67,8 @@ function check_csrf($csrf) {
 
 // Render item image from ID
 
-function render_image($item_list = array(), $id) {
-
+function render_image($id) {
+    $item_list = include 'layout/js/renders.php';
     $image = $item_list[$id];
 
     echo '<span class="item" data-item="'.$id.'" style="background-position: -'.$image[3].'px '.$image[4].'px;"></span>';

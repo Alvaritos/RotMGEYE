@@ -1428,7 +1428,7 @@ th {
     padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
-    border-top: 1px solid #ecf0f1;
+    border-top: 1px solid #dddddd;
 }
 .table > thead > tr > th {
     vertical-align: bottom;
@@ -5866,7 +5866,15 @@ table > tbody > tr > td,
 .table > tbody > tr > td,
 table > tfoot > tr > td,
 .table > tfoot > tr > td {
-    border: none;
+
+}
+.character {
+
+display: inline-block;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    background: url('../img/characters.png') transparent;
 }
 table-bordered > thead > tr > th,
 .table-bordered > thead > tr > th,
