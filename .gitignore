@@ -214,5 +214,4 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 .idea/workspace.xml
-engine/cache/news.cache.php
-engine/cache/news.cache.php
+engine/cache/*

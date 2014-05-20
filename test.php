@@ -1,12 +1,10 @@
 <?php
 /**
- * logout.php
+ * test.php
  * Created at 5/19/14
  */
 
 include 'engine/engine.php';
 include 'layout/header.html';
 
-logged_only();
-
-log_out();
+render_image(3096);
