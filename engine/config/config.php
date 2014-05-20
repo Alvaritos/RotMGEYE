@@ -11,7 +11,7 @@ return array(
     'mysql' => array(
 
         'host'     => 'localhost',
-        'password' => 'djramos1',
+        'password' => '',
         'user'     => 'root',
         'database' => 'rotmgweb'
     ),
